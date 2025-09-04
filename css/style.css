@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #333;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: #ecf0f1;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+.header-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.theme-toggle,
+.back-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  padding: 0.75rem;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.back-btn {
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+}
+
+.theme-toggle:hover,
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.search-container {
+  position: relative;
+  margin-bottom: 2rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#search-input {
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  border: none;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.dark-mode #search-input {
+  background: rgba(52, 73, 94, 0.9);
+  color: #ecf0f1;
+}
+
+#search-input:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.search-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.sheikhs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.sheikh-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .sheikh-card {
+  background: rgba(52, 73, 94, 0.9);
+}
+
+.sheikh-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.sheikh-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 4px solid #667eea;
+}
+
+.sheikh-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.dark-mode .sheikh-card h3 {
+  color: #ecf0f1;
+}
+
+.sheikh-card p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.dark-mode .sheikh-card p {
+  color: #bdc3c7;
+}
+
+.sheikh-info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .sheikh-info {
+  background: rgba(52, 73, 94, 0.9);
+}
+
+#sheikhImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #667eea;
+}
+
+.sheikh-info-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.dark-mode .sheikh-info-text h2 {
+  color: #ecf0f1;
+}
+
+.sheikh-info-text p {
+  color: #666;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.dark-mode .sheikh-info-text p {
+  color: #bdc3c7;
+}
+
+.current-surah {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  color: #2c3e50;
+}
+
+.dark-mode .current-surah {
+  background: rgba(52, 73, 94, 0.9);
+  color: #ecf0f1;
+}
+
+#audio-player {
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.verse-display {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  max-height: 400px;
+  overflow-y: auto;
+  line-height: 2;
+  font-size: 1.2rem;
+}
+
+.dark-mode .verse-display {
+  background: rgba(52, 73, 94, 0.9);
+}
+
+.verse {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.verse.highlight {
+  background: rgba(102, 126, 234, 0.2);
+  transform: scale(1.02);
+}
+
+.verse-number {
+  background: #667eea;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.surah-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.surah-item {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .surah-item {
+  background: rgba(52, 73, 94, 0.9);
+}
+
+.surah-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.surah-item a {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.dark-mode .surah-item a {
+  color: #ecf0f1;
+}
+
+.surah-item a:hover {
+  background: rgba(102, 126, 234, 0.1);
+}
+
+.surah-number {
+  background: #667eea;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  min-width: 35px;
+  text-align: center;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+@media (max-width: 768px) {
+  .sheikh-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sheikhs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .surah-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.playing {
+  animation: pulse 2s infinite;
+}
