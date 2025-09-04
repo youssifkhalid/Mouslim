@@ -1,0 +1,74 @@
+{
+  "sheikhs": [
+    {
+      "id": "yasser",
+      "name": "الشيخ ياسر الدوسري",
+      "description": "قارئ قرآن مشهور من المملكة العربية السعودية، معروف بصوته العذب وأدائه المميز للقرآن الكريم.",
+      "image": "https://example.com/yasser.jpg",
+      "server": "https://server11.mp3quran.net/yasser/"
+    },
+    {
+      "id": "jleel",
+      "name": "الشيخ خالد الجليل",
+      "description": "الشيخ خالد بن فهد الجليل المطيرى ولد فى الرياض عام 1963. من أشهر المقرئين فى المملكة والعالم العربى.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPhymzbH4sH5MflPb_XAfbz4ORvX_Onb8TIA&s",
+      "server": "https://server10.mp3quran.net/jleel/"
+    },
+    {
+      "id": "afs",
+      "name": "الشيخ مشاري العفاسي",
+      "description": "يتمتّع بصوت عذب وقوة في التحكم بطبقات الصوت وروعة الأداء. له العديد من الإصدارات.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3VBA4ZR8xYaO6grauIRQMg_HPrso6pt90OAUrJ42-BCLL14lq04VW4CY&s=10",
+      "server": "https://server8.mp3quran.net/afs/"
+    },
+    {
+      "id": "s_gmd",
+      "name": "الشيخ سعد الغمادي",
+      "description": "إمام جامع كانو بصورة عامة وقد أمّ في مساجد مختلفة في دول الخليج والعالم.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLzrrB0mBwNysBMvnj2a0GplZCcoudL5GwJw&s",
+      "server": "https://server7.mp3quran.net/s_gmd/"
+    },
+    {
+      "id": "ajm",
+      "name": "الشيخ أحمد العجمي",
+      "description": "قارئ للقران الكريم براوية حفص عن عاصم. من أشهر القراء في العالم الإسلامي.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnAKd1hpKXwma0brE6SfUs8d4XRQmKV-pkf2F1KwJ0cxjPOVDzcWjvIxw&s=10",
+      "server": "https://server10.mp3quran.net/ajm/"
+    },
+    {
+      "id": "nufais",
+      "name": "الشيخ أحمد النفيس",
+      "description": "قارئ للقرآن الكريم من الكويت، حاصل على إجازة بالقرآن الكريم بروايتين حفص وشعبة.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOz2mqzmILDOTFr07OzidqsgY1DIyvXuCFIw&s",
+      "server": "https://server16.mp3quran.net/nufais/Rewayat-Hafs-A-n-Assem/"
+    },
+    {
+      "id": "minsh",
+      "name": "الشيخ محمد صديق المنشاوي",
+      "description": "قارئ مصري وأحد أعلام التلاوة المتميزين. سجل المصحف المرتل برواية حفص عن عاصم.",
+      "image": "https://example.com/minshawy.jpg",
+      "server": "https://server10.mp3quran.net/minsh/"
+    },
+    {
+      "id": "sds",
+      "name": "الشيخ عبد الرحمن السديس",
+      "description": "إمام وخطيب الحرم المكي الشريف، ورئيس الشؤون الدينية في المسجد الحرام والمسجد النبوي.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS30amH9ZZ0AXnmgglaVfQoKQpBWnbP2Alubw&s",
+      "server": "https://server11.mp3quran.net/sds/"
+    },
+    {
+      "id": "maher",
+      "name": "الشيخ ماهر المعيقلي",
+      "description": "درس المراحل الأولى من التعليم في المدينة وحفظ القرآن الكريم في المسجد النبوي.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT53UU4D_ALKAuCcpSOlRH_8ocT_Gnol67K7w&s",
+      "server": "https://download.ourquraan.com/Maher_Al-Muaiqly/"
+    },
+    {
+      "id": "lhdan",
+      "name": "الشيخ محمد اللحيدان",
+      "description": "قارئ من السعودية، حاصل على إجازة في قراءة حفص وشعبة عن عاصم. عين إمامًا لجامع الشيخ ناصر.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6-bdoJUm5x-p9twhfLrAgo0qwheGHGOcyxw&usqp=CAU",
+      "server": "https://server8.mp3quran.net/lhdan/"
+    }
+  ]
+}
